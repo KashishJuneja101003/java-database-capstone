@@ -6,6 +6,11 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import com.project.back_end.services.AppointmentService;
+import com.project.back_end.services.ServiceClass;
+import com.project.back_end.models.Appointment;
+
+
 import java.time.LocalDate;
 import java.util.Map;
 
@@ -14,10 +19,10 @@ import java.util.Map;
 public class AppointmentController {
 
     private final AppointmentService appointmentService;
-    private final Service service;
+    private final ServiceClass service;
 
     @Autowired
-    public AppointmentController(AppointmentService appointmentService, Service service) {
+    public AppointmentController(AppointmentService appointmentService, ServiceClass service) {
         this.appointmentService = appointmentService;
         this.service = service;
     }

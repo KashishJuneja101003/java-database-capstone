@@ -10,15 +10,20 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
 
+import com.project.back_end.services.ServiceClass;
+import com.project.back_end.services.DoctorService;
+import com.project.back_end.models.Doctor;
+import com.project.back_end.DTO.Login;
+
 @RestController
 @RequestMapping("${api.path}doctor")
 public class DoctorController {
 
     private final DoctorService doctorService;
-    private final Service service;
+    private final ServiceClass service;
 
     @Autowired
-    public DoctorController(DoctorService doctorService, Service service) {
+    public DoctorController(DoctorService doctorService, ServiceClass service) {
         this.doctorService = doctorService;
         this.service = service;
     }

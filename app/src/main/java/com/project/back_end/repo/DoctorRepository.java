@@ -6,6 +6,8 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+import com.project.back_end.models.Doctor;
+
 @Repository
 public interface DoctorRepository extends JpaRepository<Doctor, Long> {
 

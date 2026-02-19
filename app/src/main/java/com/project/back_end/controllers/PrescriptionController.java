@@ -5,6 +5,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import com.project.back_end.services.ServiceClass;
+import com.project.back_end.services.PrescriptionService;
+
+
 import java.util.Map;
 
 @RestController
@@ -12,10 +16,10 @@ import java.util.Map;
 public class PrescriptionController {
 
     private final PrescriptionService prescriptionService;
-    private final Service service;
+    private final ServiceClass service;
 
     @Autowired
-    public PrescriptionController(PrescriptionService prescriptionService, Service service) {
+    public PrescriptionController(PrescriptionService prescriptionService, ServiceClass service) {
         this.prescriptionService = prescriptionService;
         this.service = service;
     }

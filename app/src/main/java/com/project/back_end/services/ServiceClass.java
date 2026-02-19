@@ -8,8 +8,16 @@ import org.springframework.stereotype.Service;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.project.back_end.models.Admin;
+import com.project.back_end.models.Appointment;
+import com.project.back_end.models.Patient;
+import com.project.back_end.DTO.Login;
+import com.project.back_end.repo.AdminRepository;
+import com.project.back_end.repo.DoctorRepository;
+import com.project.back_end.repo.PatientRepository;
+
 @Service
-public class Service {
+public class ServiceClass {
 
     private final TokenService tokenService;
     private final AdminRepository adminRepository;
@@ -19,7 +27,7 @@ public class Service {
     private final PatientService patientService;
 
     @Autowired
-    public Service(TokenService tokenService,
+    public ServiceClass(TokenService tokenService,
                    AdminRepository adminRepository,
                    DoctorRepository doctorRepository,
                    PatientRepository patientRepository,

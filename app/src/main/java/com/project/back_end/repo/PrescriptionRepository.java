@@ -5,6 +5,8 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+import com.project.back_end.models.Prescription;
+
 @Repository
 public interface PrescriptionRepository extends MongoRepository<Prescription, String> {
 

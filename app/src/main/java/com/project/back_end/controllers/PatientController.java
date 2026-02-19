@@ -5,6 +5,11 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import com.project.back_end.services.ServiceClass;
+import com.project.back_end.services.PatientService;
+import com.project.back_end.models.Patient;
+import com.project.back_end.DTO.Login;
+
 import java.util.Map;
 
 @RestController
@@ -12,10 +17,10 @@ import java.util.Map;
 public class PatientController {
 
     private final PatientService patientService;
-    private final Service service;
+    private final ServiceClass service;
 
     @Autowired
-    public PatientController(PatientService patientService, Service service) {
+    public PatientController(PatientService patientService, ServiceClass service) {
         this.patientService = patientService;
         this.service = service;
     }

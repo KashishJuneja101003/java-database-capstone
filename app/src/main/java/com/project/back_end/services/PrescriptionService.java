@@ -9,6 +9,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.project.back_end.models.Prescription;
+import com.project.back_end.repo.PrescriptionRepository;
+
 @Service
 public class PrescriptionService {
 

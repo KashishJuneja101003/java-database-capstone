@@ -9,6 +9,13 @@ import java.time.LocalDateTime;
 import java.util.*;
 import java.util.stream.Collectors;
 
+import com.project.back_end.models.Patient;
+import com.project.back_end.models.Appointment;
+import com.project.back_end.repo.PatientRepository;
+import com.project.back_end.repo.AppointmentRepository;
+import com.project.back_end.DTO.AppointmentDTO;
+import com.project.back_end.services.TokenService;
+
 @Service
 public class PatientService {
 
